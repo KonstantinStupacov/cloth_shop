@@ -1,7 +1,7 @@
 from rest_framework.exceptions import ValidationError
 
 
-class ToyQueryParamValidator:
+class ModelExistsQueryParamValidator:
     def __call__(self, value):
         search_instance = self.model.objects.filter(pk=value).exists()
         if not search_instance:
