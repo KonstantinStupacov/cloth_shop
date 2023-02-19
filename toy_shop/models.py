@@ -15,7 +15,7 @@ class Toy(Model):
         return self.__repr__()
 
     def __repr__(self):
-        return f'№{self.uuid}: {self.name}'
+        return f'№{self.uuid}: {self.name}, в наличии {self.quantity}, цена:{self.price}'
 
 
 class Sex(Model):
