@@ -44,13 +44,14 @@ class Category(Model):
 
 class Order(Model):
     __doc__ = 'Заказы'
-    name = AutoField(primary_key=True)
-    toys = ManyToManyField('Toy', through="Order_details")
+    name = AutoField(primary_key=True, null=False)
+    toys = ManyToManyField('Toy', through="OrderDetail")
 
-class Order_details(Model):
+
+class OrderDetail(Model):
     toy_uuid = ForeignKey('Toy', on_delete=CASCADE)
     order_uuid = ForeignKey('Order', on_delete=CASCADE)
     date = DateField()
-    all_price = FloatField(max_length=30, verbose_name="Цена")
+    all_price = FloatField(max_length=30, verbose_name="Общая цена")
 # тут должна быть какая-то математика
 
