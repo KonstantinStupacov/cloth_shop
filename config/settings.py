@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = '_1.urls'
+ROOT_URLCONF = 'toy_shop.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = '_1.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database

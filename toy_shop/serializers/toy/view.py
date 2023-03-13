@@ -7,4 +7,3 @@ class ToyModelSerializer(ModelSerializer):
     class Meta:
         model = Toy
         fields = '__all__'
-

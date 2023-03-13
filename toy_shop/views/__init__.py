@@ -1,1 +1,1 @@
-from .toy_viewset import ToyViewSet
+from .toy import ToyViewSet
