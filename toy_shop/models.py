@@ -53,5 +53,3 @@ class OrderDetail(Model):
     order_uuid = ForeignKey('Order', on_delete=CASCADE)
     date = DateField()
     all_price = FloatField(max_length=30, verbose_name="Общая цена")
-# тут должна быть какая-то математика
-
