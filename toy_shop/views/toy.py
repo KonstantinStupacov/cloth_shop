@@ -5,7 +5,7 @@ from ..serializers.toy import ToyModelSerializer, ToyQueryParamsSerializer
 
 
 class ToyViewSet(ModelViewSet):
-    serializer_class = ToyModelSerializer
+    serializer_class = ToyModelSerializer12
 
     def get_queryset(self):
         queryset = Toy.objects.all()
